@@ -7,17 +7,20 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Food blog</title>
-     <!-- Additional CSS Files -->
+     <!-- Additional Files -->
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">	
-	</script>
-    <link rel="stylesheet" href="style.css">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+	 <link rel="stylesheet" href="style.css">     
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script src="https://kit.fontawesome.com/0886af7928.js" crossorigin="anonymous"></script>
-     
-    <!-- Additional CSS Files End -->
-
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+	</script>
+   </head>
+<body>
+    <!-- Additional Files End -->
 
 <div class="homepage_wrap">
 <!------------------------------Header---------------------------------->
@@ -42,7 +45,7 @@
 				<li class="mr-3 mt-3"><i class="fas fa-search text-muted"></i>
 					<div class="togglesearch text-muted">
 			            <input type="text" placeholder=""/>
-			            <button type="button" class="search-btn btn btn-muted mt-1 btn-sm">Search</button>
+			            <button type="button" class="btn btn-info food-blog-sub-btn:hover mt-1 btn-sm">Search</button>
 			        </div>
 			    </li>
 				<li class="mr-3 mt-3 text-muted"> FR </li>
@@ -50,8 +53,7 @@
 		</div>
 	</header>
 <!--------------------------------Ends Header-------------------------------------->
-
-<!--------------------------------Ends Header-------------------------------------->
+<!--------------------------------Navigation-------------------------------------->
 
 <nav>
 <nav class="navbar navbar-expand-md navbar-light bg-white">
@@ -69,18 +71,57 @@
 </nav>
 </div>
 </nav>
-
-
-
-
-
-
+<!--------------------------------Ends Navigation-------------------------------------->
+<!--------------------------------SLIDER----------------------------->
+<div class="container-fluid slider-container">
+<div class="mt-5 mb-5 post-slider-wrap">
+	<div class="col-md-3 single-item slider-images-wrap">
+		<img src="images/postslider1.jpg" class="img-fluid" class="">
+		<div class="">
+		<a href="">
+			<div class="slider-text text-center">
+				<p class="mt-2"><u>RECIPIES</u></p>
+				<h3 class="text-dark mb-2">Raspberry Cheesecake Brownies</h3>
+			</div>
+		</a>
+	</div>
+	</div>
+	<div class="col-md-3 single-item">
+		<img src="images/postslider2.jpg" class="img-fluid ">
+				<a href="">
+			<div class="slider-text text-center">
+				<p class="mt-2"><u>TIPS</u></p>
+				<h3 class="text-dark mb-2">The Basics of Mix and Match</h3>
+			</div>
+		</a>
+	</div>
+	<div class="col-md-3 single-item">
+		<img src="images/postslider3.jpg" class="img-fluid ">
+				<a href="">
+			<div class="slider-text text-center">
+				<p class="mt-2"><u>DIY</u></p>
+				<h3 class="text-dark mb-2">The ABC of Placeholder</h3>
+			</div>
+		</a>
+	</div>
+	<div class="col-md-3 single-item">
+		<img src="images/postslider4.jpg" class="img-fluid ">
+				<a href="">
+			<div class="slider-text text-center">
+				<p class="mt-2"><u>TRENDS</u></p>
+				<h3 class="text-dark mb-2">New Trends</h3>
+			</div>
+		</a>
+	</div>	
+</div>
+</div>
+<!--------------------------------ENDS SLIDER----------------------------->
 <!--------------------------------NEWSLETTER----------------------------->
-<div class="container newsletter-card mt-5 mb-5 ">
+<div class="container newsletter-card mt-5 mb-5">
 				<div class="row my-5">
 					<div class="col-lg-6 col-md-6 col-12 col-xxl-6">
 						<figure class="ml-2 mr-2">
-							<img src="">
+							<img src="images/newsletter-menu.jpg" alt="menu" height="110" width="200" class="d-flex m-auto">
 						</figure>
 				</div>
 					<div class="col-lg-6 col-md-6 col-12 col-xxl-6 d-flex justify-content-center align-items-start flex-column">
@@ -92,26 +133,160 @@
 			 			<input class="newsletter-input" type="email" name="email" placeholder="Enter your email address" width="350px">
 			 			<button type="button" class="newsletter-btn">SEND</button>
 		 			</div>
-		 	</div>
-				
+		 		</div>				
+					</div>	
+				</div>
+			</div>		
+<!--------------------------------ENDS NEWSLETTER----------------------------->
+<!--------------------------------SECTION----------------------------->
+			<div class="container diy-section-wrap mt-5 mb-2">
+				<div class="row my-5">
+					<div class="col-lg-6 col-md-6 col-12 col-xxl-6">
+						<figure>
+							<img src="images/diy-image.jpg" alt="diyImg" class ="img-fluid food-blog-img">
+						</figure>
+					</div>
+					<div class="col-lg-6 col-md-6 col-12 col-xxl-6 d-flex justify-content-center align-items-center flex-column">
+						<div class="food-blog-sub-title">DIY</div>
+						<h1 class="text-center">A Menu For Everyone</h1>
+						<div class="mb-2"><span class="text-info">Robert William</span>
+						published on 19th October, 2021</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor distinctio debitis eaque id ipsum consequatur eveniet nisi non sunt beatae reprehenderit nemo ducimus culpa, commodi maxime dolores nulla voluptatem . Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint quod laudantium debitis unde </p>
+				<a href="">
+					<button type="button" class="food-blog-sub-btn btn btn-info btn-info"  data-bs-toggle="tooltip" data-bs-placement="right" title="Click Here">Read More</button>
+				</a>
 					</div>	
 				</div>
 			</div>		
 
 
+			<div class="container diy-section-wrap mt-2 mb-2">
+				<div class="row my-5">
+					<div class="col-lg-6 col-md-6 col-12 col-xxl-6 d-flex justify-content-center align-items-center flex-column">
+						<div class="food-blog-sub-title">TRENDS</div>
+						<h1 class="text-center">Ultraviolet: Ultra-Easy to Love</h1>
+						<div class="mb-2"><span class="text-info">Robert William</span>
+						published on 19th October, 2021</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor distinctio debitis eaque id ipsum consequatur eveniet nisi non sunt beatae reprehenderit nemo ducimus culpa, commodi maxime dolores nulla voluptatem . Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint quod laudantium debitis unde </p>
+				<a href="mb-2">
+					<button type="button" class="mb-2 food-blog-sub-btn btn btn-info btn-info"  data-bs-toggle="tooltip" data-bs-placement="right" title="Click Here">Read More</button>
+				</a>
+					</div>	
+					<div class=" mt-2 col-lg-6 col-md-6 col-12 col-xxl-6">
+						<figure>
+							<img src="images/trends-image.jpg" alt="trendsImg" class ="img-fluid food-blog-img">
+						</figure>
+					</div>
+				</div>
+			</div>		
 
 
+			<div class="container mt-2 mb-2">
+				<div class="d-flex flex-column">
+					<div class="">
+						<figure>
+							<img src="images/recipe-image.jpg" alt="recipeImg" class ="img-fluid food-blog-img">
+						</figure>
+					</div>	
+					<div class=" text-center d-flex justify-content-center align-items-center flex-column">
+						<div class="food-blog-sub-title text-center">RECIPES</div>
+						<h1 class="text-center">Cream Cheese, Vanilla and Cracker Cheesecake</h1>
+						<div class="mb-2"><span class="text-info">Robert William</span>
+						published on 19th October, 2021</div>
+				<a href="">
+					<button type="button" class="mb-2 mt-2 food-blog-sub-btn btn btn-info btn-info"  data-bs-toggle="tooltip" data-bs-placement="right" title="Click Here">Read More</button>
+				</a>
+					</div>						
+					</div>
+			</div>
+
+			<div class="container diy-section-wrap mt-2 mb-2">
+				<div class="row my-5">
+					<div class="col-lg-6 col-md-6 col-12 col-xxl-6">
+						<figure>
+							<img src="images/serving-board.jpg" alt="servingImg" class ="img-fluid food-blog-img">
+						</figure>
+					</div>
+					<div class="col-lg-6 col-md-6 col-12 col-xxl-6 d-flex justify-content-center align-items-center flex-column">
+						<div class="food-blog-sub-title">DIY</div>
+						<h1 class="text-center">Serving Boards</h1>
+						<div class="mb-2"><span class="text-info">Alen James</span>
+						published on 19th October, 2021</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor distinctio debitis eaque id ipsum consequatur eveniet nisi non sunt beatae reprehenderit nemo ducimus culpa, commodi maxime dolores nulla voluptatem . Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint quod laudantium debitis unde </p>
+				<a href="">
+					<button type="button" class="food-blog-sub-btn btn btn-info btn-info"  data-bs-toggle="tooltip" data-bs-placement="right" title="Click Here">Read More</button>
+				</a>
+					</div>	
+				</div>
+			</div>		
 
 
-
-<!--------------------------------ENDS NEWSLETTER----------------------------->
-
-
-
-
-
-
-
+			<div class="container diy-section-wrap mt-2 mb-5">
+				<div class="row my-5">
+					<div class="col-lg-6 col-md-6 col-12 col-xxl-6 d-flex justify-content-center align-items-center flex-column">
+						<div class="food-blog-sub-title">TRENDS</div>
+						<h1 class="text-center">Kitchen Style Guide</h1>
+						<div class="mb-2"><span class="text-info">Robert William</span>
+						published on 19th October, 2021</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor distinctio debitis eaque id ipsum consequatur eveniet nisi non sunt beatae reprehenderit nemo ducimus culpa, commodi maxime dolores nulla voluptatem . Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint quod laudantium debitis unde </p>
+				<a href="">
+					<button type="button" class="mb-2 mt-2 food-blog-sub-btn btn btn-info btn-info"  data-bs-toggle="tooltip" data-bs-placement="right" title="Click Here">Read More</button>
+				</a>
+					</div>	
+					<div class="col-lg-6 col-md-6 col-12 col-xxl-6">
+						<figure>
+							<img src="images/tips-image.jpg" alt="tipsImg" class ="img-fluid food-blog-img">
+						</figure>
+					</div>
+				</div>
+			</div>		
+<!--------------------------------ENDS  SECTION----------------------------->
+<!--------------------------------Gallery----------------------------->
+<div class="container-fluid">
+<div class="gallery-wrap row d-flex flex-wrap mt-5 mb-5">
+		<div class="gallery-img col-xl-3 col-md-4 col-sm-6 col-6 pr-0">
+				  <a href="images/gallery1.jpg" class="big" >
+				    <img src="images/gallery1.jpg" alt="" height="" width="" class="img-fluid" title="Image 1">
+				  </a>
+		</div>
+		<div class="gallery-img col-xl-3 col-md-4 col-sm-6 col-6 pr-0">
+				  <a href="images/gallery2.jpg" class="big" >
+				    <img src="images/gallery2.jpg" alt="" height="" width="" class="img-fluid" title="Image 2">
+				  </a>
+		</div>
+		<div class="gallery-img col-xl-3 col-md-4 col-sm-6 col-6 pr-0">
+				  <a href="images/gallery3.jpg" class="big" >
+				    <img src="images/gallery3.jpg" alt="" height="" width="" class="img-fluid" title="Image 3">
+				  </a>
+		</div>
+		<div class="gallery-img col-xl-3 col-md-4 col-sm-6 col-6 pr-0">
+				  <a href="images/gallery4.jpg" class="big" >
+				    <img src="images/gallery4.jpg" alt="" height="" width="" class="img-fluid" title="Image 4">
+				  </a>
+		</div>
+				<div class="gallery-img col-xl-3 col-md-4 col-sm-6 col-6 pr-0">
+				  <a href="images/gallery5.jpg" class="big" >
+				    <img src="images/gallery5.jpg" alt="" height="" width="" class="img-fluid" title="Image 5">
+				  </a>
+		</div>
+		<div class="gallery-img col-xl-3 col-md-4 col-sm-6 col-6 pr-0">
+				  <a href="images/gallery6.jpg" class="big" >
+				    <img src="images/gallery6.jpg" alt="" height="" width="" class="img-fluid" title="Image 6">
+				  </a>
+		</div>
+		<div class="gallery-img col-xl-3 col-md-4 col-sm-6 col-6 pr-0">
+				  <a href="images/gallery7.jpg" class="big" >
+				    <img src="images/gallery7.jpg" alt="" height="" width="" class="img-fluid" title="Image 7">
+				  </a>
+		</div>
+		<div class="gallery-img col-xl-3 col-md-4 col-sm-6 col-6 pr-0">
+				  <a href="images/gallery8.jpg" class="big" >
+				    <img src="images/gallery8.jpg" alt="" height="" width="" class="img-fluid" title="Image 8">
+				  </a>
+		</div>
+</div>
+</div>
+<!--------------------------------ENDS Gallery----------------------------->
 <!--------------------------------Footer----------------------------->
 <footer>
 	<div class="footer_wrap">
@@ -152,6 +327,12 @@
 
 
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+<!--------------------------------Jquery functions----------------------------->
 
 
 
@@ -159,7 +340,7 @@
 
 
 <script type="text/javascript">
-
+//---------Search icon Toggle--------//
 $(document).ready(function() {
  
 	$(".fa-search").click(function() {
@@ -169,8 +350,45 @@ $(document).ready(function() {
  
 });
 
+//---------Post Slider-------//
 
 
-
+$('.post-slider-wrap').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },    
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 500,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
 
 </script>
+</body>
+</html>

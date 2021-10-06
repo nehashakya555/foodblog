@@ -31,7 +31,7 @@ body {
 }
 /******** Ends Header Image******/
 
-/******** Socoial media links******/
+/******** Social media links******/
 .social-links li a{
 	font-size: 16px;
 	text-decoration: none;
@@ -118,9 +118,9 @@ body {
     }
 }
 /********Ends Header Responsive******/
-
 /***********************ENDS HEADER********************
 **************************************************/
+
 
 /***********************NAV BAR********************
 **************************************************/
@@ -138,6 +138,33 @@ body {
 }
 /***********************ENDS NAV BAR********************
 **************************************************/
+
+/**********************SECTION********************
+**************************************************/
+
+.food-blog-img{
+	width: 100%; height: 300px; 
+	object-fit: cover;	
+}
+
+.food-blog-sub-title{	
+	color: #17a2b8;
+	border-bottom: 1px solid #17a2b8;
+}
+.food-blog-sub-btn:hover{
+	transition: 0.3s;
+}
+
+.diy-section-wrap{
+	font-family: 'Raleway', sans-serif;
+}
+
+/***********************ENDS SECTION********************
+**************************************************/
+
+/***********************NEWSLETTER********************
+**************************************************/
+
 .newsletter-card{
 	height: auto;
 	width: 62vw;
@@ -159,7 +186,6 @@ body {
      border-radius: 0px;
      width: 60%;
      padding: 3px 0px 4px 4px;        
-
 }
 .newsletter-btn {
   border-radius: 0px;
@@ -179,13 +205,59 @@ body {
   text-decoration: none;
   transition: 0.3s;
 }
+/***********************ENDS NEWSLETTER********************
+**************************************************/
+/***********************SLIDER********************
+**************************************************/
+.slider-container{
+	max-width: 90vw;
+}
+.slider-container .single-item img{
+	max-height: 30rem;
+	max-width: 30rem;
+}
 
+.slick-prev:before, .slick-next:before{
+    color: #686868;
+}
+.slider-images-wrap img{
 
+}
+.slider-text{
+  position: absolute;
+  top: 25%;
+  left: 16px;
+  background:white;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-right: 20%;
+  padding-left: 20%;
+  font-size: 20px;
+  text-decoration: none;
+  color: #17a2b8;
+}
+/***********************END SLIDER********************
+**************************************************/
 
+/***********************GALLERY********************
+**************************************************/
+.gallery-img {
+	  padding-right: 0;
+	  padding-left: 0;
+}
+.gallery-img a img{
+	 object-fit: cover;
+	 width:350px;
+	 height:280px;
+	 overflow: hidden;
+}
+.gallery-img a img:hover{
+ 	opacity: 0.7;
+ 	transition: 0.3s;
+}
 
-
-
-
+/***********************ENDS GALLERY********************
+**************************************************/
 /***********************FOOTER********************
 **************************************************/
 
