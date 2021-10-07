@@ -21,7 +21,15 @@
    </head>
 <body>
     <!-- Additional Files End -->
-
+ <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+<!-- ***** Preloader End ***** -->
 <div class="homepage_wrap">
 <!------------------------------Header---------------------------------->
 	<header>
@@ -181,7 +189,7 @@
 			</div>		
 
 
-			<div class="container mt-2 mb-2">
+			<div class="container mt-5 mb-5">
 				<div class="d-flex flex-column">
 					<div class="">
 						<figure>
@@ -389,6 +397,25 @@ $('.post-slider-wrap').slick({
   ]
 });
 
+
+
+	// Page loading animation
+	$(window).on('load', function() {
+		if($('.cover').length){
+			$('.cover').parallax({
+				imageSrc: $('.cover').data('image'),
+				zIndex: '1'
+			});
+		}
+
+		$("#preloader").animate({
+			'opacity': '0'
+		}, 600, function(){
+			setTimeout(function(){
+				$("#preloader").css("visibility", "hidden").fadeOut();
+			}, 300);
+		});
+	});
 </script>
 </body>
 </html>
