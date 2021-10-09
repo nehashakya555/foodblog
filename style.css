@@ -220,8 +220,7 @@ body {
 .slick-prev:before, .slick-next:before{
     color: #686868!important;
 }
-.slider-images-wrap img{
-
+.slider-images-wrap .single-item img{
 }
 .slider-text{
   position: absolute;
@@ -230,11 +229,18 @@ body {
   background:white;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding-right: 20%;
-  padding-left: 20%;
-  font-size: 20px;
   text-decoration: none;
   color: #17a2b8;
+  height: 32%;
+  min-width: 60%;
+  max-width: 60%;
+  word-break: break-word;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.slider-text:hover{
+	opacity: 0.92;
+	transition: 0.3s;
 }
 /***********************END SLIDER********************
 **************************************************/
